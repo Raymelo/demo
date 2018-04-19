@@ -1,3 +1,5 @@
-#spring:
+spring:
+  main:
+    banner-mode: 'OFF'
 #  profiles:
 #    active: dev
