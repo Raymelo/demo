@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,8 +10,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
-    @RequestMapping("/hello")
-    public String index() {
+    @RequestMapping("hello")
+    public String hello() {
         return "Hello World";
+    }
+
+    @RequestMapping("wrong")
+    public String wrong() throws Exception {
+        throw new Exception("something wrong");
     }
 }
