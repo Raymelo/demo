@@ -3,3 +3,6 @@
 
 # java
 target
+
+# rebel
+rebel.xml
