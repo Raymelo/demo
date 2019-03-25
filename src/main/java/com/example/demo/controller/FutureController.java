@@ -44,7 +44,7 @@ public class FutureController {
     /**
      * 每10秒执行一次
      */
-    @Scheduled(fixedRate = 10000)
+    @Scheduled(fixedRate = 10 * 1000)
     public void update() {
         logger.info("update begin");
         Iterator<Map.Entry<String, CompletableFuture<String>>> iterator = FUTURE_MAP.entrySet().iterator();
